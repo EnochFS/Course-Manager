@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="295.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Program.homePage">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="28.0" prefWidth="455.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#closeMainPage" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="profileEdit" mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="profile" mnemonicParsing="false" onAction="#editProfile" text="Profile" />
+            </items>
+          </Menu>
+          <Menu fx:id="about" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#aboutTheProject" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="course" layoutX="14.0" layoutY="142.0" mnemonicParsing="false" onAction="#courseCreate" text="Course Creator" />
+      <Button fx:id="student" layoutX="127.0" layoutY="142.0" mnemonicParsing="false" onAction="#studentAdd" text="Add a Student" />
+      <Button fx:id="classC" layoutX="356.0" layoutY="142.0" mnemonicParsing="false" onAction="#classCreate" text="Class Creator" />
+      <Button fx:id="instruct" layoutX="247.0" layoutY="142.0" mnemonicParsing="false" onAction="#intructorAdd" text="Add Instructor" />
+      <Button fx:id="classview" layoutX="186.0" layoutY="208.0" mnemonicParsing="false" onAction="#viewClasses" text="View Classes" />
+   </children>
+</AnchorPane>

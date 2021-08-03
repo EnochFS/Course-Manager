@@ -1,0 +1,31 @@
+package Program;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.sql.Connection;
+
+
+public class Main extends Application {
+
+    public static Parent root;
+
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        root = FXMLLoader.load(getClass().getResource("signIn.fxml"));
+        primaryStage.setTitle("Course Manager Login");
+        primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.setResizable(false);
+        primaryStage.show();
+    }
+
+
+    public static void main(String[] args) {
+
+        launch(args);
+    }
+}
